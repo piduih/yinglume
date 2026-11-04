@@ -11,6 +11,27 @@
 
 ---
 
+## 📸 Screenshots
+
+### 📊 Real-Time Financial Dashboard & Performance KPIs
+![Financial Dashboard](docs/screenshots/dashboard.png)
+
+<br>
+
+<div align="center">
+
+| 🏦 Banking & Inter-Account Transfers | 👥 Team Roles & Access Control |
+| :---: | :---: |
+| ![Banking Transfer](docs/screenshots/banking-transfer.png) | ![Team Roles](docs/screenshots/user-roles.png) |
+
+| 🔐 Secure Workspace Authentication |
+| :---: |
+| ![Workspace Sign In](docs/screenshots/login.png) |
+
+</div>
+
+---
+
 ## 📖 Executive Summary
 
 **YingLume Finance** is a lightweight, secure financial management and double-entry bookkeeping platform engineered from the perspective of an experienced CTO, CFO, and Finance Director.
