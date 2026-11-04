@@ -1,0 +1,24 @@
+# Environment configuration (never commit secrets)
+.env
+
+# Storage logs and dynamic uploads
+storage/logs/*.log
+storage/uploads/*
+!storage/logs/.gitkeep
+!storage/uploads/.gitkeep
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor folders
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary / scratch files
+*.tmp
+*.bak
+

@@ -1,0 +1,18 @@
+# YingLume Finance — Root .htaccess
+# Redirect all requests to public/ directory
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # If the request is already targeting the public directory, skip
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    # Redirect all other requests to public/index.php
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/index.php [L,QSA]
+</IfModule>
+
+# If running from the project root (e.g. http://localhost/yinglume/)
+# and the web root is NOT inside /public, we forward everything there.
