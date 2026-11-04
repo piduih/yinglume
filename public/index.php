@@ -11,6 +11,14 @@
 
 declare(strict_types=1);
 
+// Serve static assets directly when using PHP built-in CLI server
+if (php_sapi_name() === 'cli-server') {
+    $file = __DIR__ . parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
+    if (is_file($file)) {
+        return false;
+    }
+}
+
 // ── Timing (dev profiling) ───────────────────────────────────────────────────
 define('YINGLUME_START', microtime(true));
 

@@ -50,7 +50,9 @@ class AuthController extends BaseController
         $email    = (string) $this->input('email');
         $password = (string) $this->input('password');
 
-        if (Auth::attempt($email, $password)) {
+        $user = Auth::attempt($email, $password);
+        if ($user) {
+            Auth::login($user);
             $this->flash('success', 'Welcome back to YingLume Finance!');
             $this->redirect('/app/dashboard');
         }

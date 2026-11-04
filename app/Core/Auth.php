@@ -258,6 +258,9 @@ class Auth
         // Strip sensitive fields before returning
         unset($user['password'], $user['remember_token']);
 
+        // Log the user into session
+        self::login($user);
+
         return $user;
     }
 }
