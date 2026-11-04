@@ -172,7 +172,7 @@ yinglume/
 
 ### Step 1: Clone or Download
 ```bash
-git clone https://github.com/yourusername/yinglume.git
+git clone https://github.com/piduih/yinglume.git
 cd yinglume
 ```
 
